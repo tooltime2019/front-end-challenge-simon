@@ -1,0 +1,22 @@
+.heading {
+    margin: 40px;
+}
+
+.container {
+    margin: 20px;
+}
+
+.cardList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: block;
+    list-style: none;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 20px;
+}
