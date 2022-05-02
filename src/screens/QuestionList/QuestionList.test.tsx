@@ -1,11 +1,10 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
-import App from './App';
-import * as behaviour from './App.behaviour';
-import {useQuestions} from './App.behaviour';
+import QuestionList from './QuestionList';
+import * as behaviour from './QuestionList.behaviour';
 
 test('renders header', () => {
-	render(<App/>);
+	render(<QuestionList/>);
 	const header = screen.getByText(/Questions/i);
 	expect(header).toBeInTheDocument();
 });
@@ -32,7 +31,7 @@ test(`renders list of questions`, async () => {
 		]
 	})
 
-	render(<App/>);
+	render(<QuestionList/>);
 
 	expect(await screen.getByText(/Favourite programming language/i)).toBeInTheDocument();
 });

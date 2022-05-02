@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {fetchQuestions, Question} from './services/questions';
+import {fetchQuestions, Question} from '../../services/questions';
 
 function useQuestions() {
 

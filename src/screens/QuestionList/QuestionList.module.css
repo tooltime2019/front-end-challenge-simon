@@ -11,9 +11,12 @@
     flex-wrap: wrap;
 }
 
+.listItem {
+    list-style: none;
+}
+
 .card {
     display: block;
-    list-style: none;
     width: 200px;
     padding: 20px;
     border: 2px solid gray;
