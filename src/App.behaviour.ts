@@ -15,4 +15,4 @@ function useQuestions() {
 	return questions;
 }
 
-export default useQuestions;
+export {useQuestions};
