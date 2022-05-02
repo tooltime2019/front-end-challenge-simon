@@ -7,7 +7,7 @@ function App() {
 		<div>
 			<ul>
 				{questions.map(question => (
-					<li>{question.question}</li>
+					<li key={question.url}>{question.question}</li>
 				))}
 			</ul>
 		</div>
